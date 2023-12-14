@@ -1,0 +1,29 @@
+.tableBody {
+  &__td {
+    //border: 1px solid #ddd;
+    border-bottom: 2px solid #C0C0C0;
+    padding: 14px 35px;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__tr {
+    background-color: white;
+    &:hover {
+      background: rgba(99, 70, 180, 0.25);
+    }
+    &:nth-child(even) {
+      // background-color: #f2f2f2;
+    }
+  }
+
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+

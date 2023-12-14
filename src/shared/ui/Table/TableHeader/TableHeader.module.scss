@@ -1,0 +1,20 @@
+.tableHead {
+  &__th {
+
+    text-align: left;
+    padding: 18px 35px;
+    background: white;
+    font-size: 14px;
+    font-weight: normal;
+    border-bottom: 2px solid #898989;
+    border-right: 1px solid #C0C0C0;
+    &:first-child {
+      border-radius: 20px 0 0 0;
+    }
+
+    &:last-child {
+      // border-radius: 0 20px 0 0;
+    }
+  }
+}
+
