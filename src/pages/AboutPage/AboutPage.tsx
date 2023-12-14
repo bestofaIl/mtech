@@ -1,9 +1,8 @@
 import ContentTable from "widgets/ContentTable/ContentTable";
 import { useEffect, useState } from "react";
-import { LOCAL_STORAGE_CONTENT_KEY } from "shared/constants/constants";
-import Button, { ThemeButton } from "shared/ui/Button/Button";
-import { classNames } from "shared/lib/classNames/classNames";
 import { useNavigate } from "react-router-dom";
+import { ClearButton } from "features/ClearButton";
+import { LOCAL_STORAGE_CONTENT_KEY } from "app/providers/ContentProvider/lib/ContentContext";
 import cls from "./AboutPage.module.scss";
 
 function AboutPage() {
@@ -17,21 +16,9 @@ function AboutPage() {
         }
     }, []);
 
-    const handleClear = () => {
-        localStorage.setItem(LOCAL_STORAGE_CONTENT_KEY, null);
-        setData(null);
-        navigate("/");
-    };
-
     return data ? (
         <div className={cls.container}>
-            <Button
-                onClick={handleClear}
-                theme={ThemeButton.CLEAR}
-                className={classNames(cls.Button, {}, [])}
-            >
-                Загрузить новый файл
-            </Button>
+            <ClearButton />
             <ContentTable content={data} />
         </div>
     ) : "Loading...";

@@ -1,5 +1,5 @@
 import React from "react";
-import { columnRecord } from "shared/ui/Table/Table";
+import { columnRecord } from "app/providers/ContentProvider/lib/ContentContext";
 import cls from "./TableHeader.module.scss";
 
 interface TableHeaderProps {

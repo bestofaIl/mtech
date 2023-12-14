@@ -1,0 +1,27 @@
+.Button {
+
+  align-self: flex-end;
+
+  margin: 18px 14px;
+
+  color: #FFF;
+
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  padding: 10px 6px;
+  border-radius: 5px;
+  background: #6346B4;
+  width: 164px;
+  height: 36px;
+
+  &:hover {
+    background-color: #A88EF0;
+  }
+  &:active {
+    background-color: #311F63;
+  }
+}

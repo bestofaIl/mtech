@@ -1,8 +1,8 @@
 import React from "react";
 import _ from "lodash";
 import { classNames } from "shared/lib/classNames/classNames";
+import { columnRecord } from "app/providers/ContentProvider/lib/ContentContext";
 import cls from "./TableBody.module.scss";
-import { columnRecord } from "../Table";
 
 interface TableBodyProps {
     data: Array<object>;
